@@ -107,6 +107,7 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -243,6 +244,7 @@
                 </executions>
             </plugin>
         </plugins>
+
     </build>
     <dependencies>
         <!-- TESTING DEPENDENCIES -->
@@ -253,4 +255,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven2</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
