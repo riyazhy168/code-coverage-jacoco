@@ -1,4 +1,4 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 Code Coverage with Jacoco,default,FizzBuzz,11,35,2,4,3,9,5,5,3,4
-Code Coverage with Jacoco,default,ReturnNumbers2,18,0,0,0,6,0,6,0,6,0
+Code Coverage with Jacoco,default,ReturnNumbers2,0,18,0,0,0,6,0,6,0,6
 Code Coverage with Jacoco,default,ReturnNumbers,0,18,0,0,0,6,0,6,0,6
