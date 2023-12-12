@@ -29,7 +29,7 @@
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
-        <jacoco.version>0.8.6</jacoco.version>
+        <jacoco.version>0.8.10</jacoco.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>/target/jacoco.exec</sonar.jacoco.reportPath>
@@ -59,13 +59,21 @@
             </properties>
         </profile>
     </profiles>
-
+    <dependencies>
+        <!-- TESTING DEPENDENCIES -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.3</version>
+                <version>0.8.10</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
@@ -95,23 +103,15 @@
                         </configuration>
                     </execution>
                 </executions>
-                <!--				<configuration>-->
-                <!--					<systemPropertyVariables>-->
-                <!--						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>-->
-                <!--					</systemPropertyVariables>-->
-                <!--				</configuration>-->
+<!--                <configuration>-->
+<!--                    <systemPropertyVariables>-->
+<!--                        <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>-->
+<!--                    </systemPropertyVariables>-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <!-- TESTING DEPENDENCIES -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+
     <pluginRepositories>
         <pluginRepository>
             <id>maven2</id>
